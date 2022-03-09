@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animal.css">
+    <title>Sound Animals</title>
+    <script src="js/jquery.js"></script>
+
+    <audio id="audioAnjing" src="audio/Suara Anjing Menggonggong - dog sound.mp3" type="audio/mpeg"></audio>
+    <audio id="audioMonyet" src="audio/Monkey.mp3" type="audio/mpeg"></audio>
+    <audio id="audioBuaya" src="audio/Assalamualaikum.mp3" type="audio/mpeg"></audio>
+    <audio id="audioHarimau" src="audio/Tiger.mp3" type="audio/mpeg"></audio>
+    <audio id="audioSerigala" src="audio/Wolves.mp3" type="audio/mpeg"></audio>
+    <audio id="audioKuda" src="audio/Horse.mp3" type="audio/mpeg"></audio>
+    <script>
+        $("document").ready(function() {
+            const audioAnjing = $("#audioAnjing")[0];
+            const audioMonyet = $("#audioMonyet")[0];
+            const audioBuaya = $("#audioBuaya")[0];
+            const audioHarimau = $("#audioHarimau")[0];
+            const audioSerigala = $("#audioSerigala")[0];
+            const audioKuda = $("#audioKuda")[0];
+            $("div.anjing").click(function() {
+                $(this).css({
+                    background: "url('img/dog.png')"
+                });
+                audioAnjing.play();
+            });
+            $("div.monyet").click(function() {
+                $(this).css({
+                    background: "url('img/monyet.jpeg')"
+                });
+                audioMonyet.play();
+            });
+            $("div.buaya").click(function() {
+                $(this).css({
+                    background: "url('img/alligator.png')"
+                });
+                audioBuaya.play();
+            });
+            $("div.harimau").click(function() {
+                $(this).css({
+                    background: "url('img/harimau (1).jpg')"
+                });
+                audioHarimau.play();
+            });
+            $("div.srigala").click(function() {
+                $(this).css({
+                    background: "url('img/serigala.png')"
+                });
+                audioSerigala.play();
+            });
+            $("div.kuda").click(function() {
+                $(this).css({
+                    background: "url('img/kuda.png')"
+                });
+                audioKuda.play();
+            });
+        });
+    </script>
+   
+</head>
+
+<body>
+    <fieldset>
+        <h1>Dekati pada setiap kotak untuk menampilkan hewan</h1>
+        <div class="bingkai">
+            <div class="anjing">
+            </div>
+            <h5>Suara Anjing</h5>
+        </div>
+        <div class="bingkai">
+            <div class="monyet">
+            </div>
+            <h5>Suara Monyet</h5>
+        </div>
+        <div class="bingkai">
+            <div class="buaya">
+            </div>
+            <h5>Suara Buaya</h5>
+        </div>
+        <div class="bingkai">
+            <div class="harimau">
+            </div>
+            <h5>Suara Harimau</h5>
+        </div>
+        <div class="bingkai">
+            <div class="srigala">
+            </div>
+            <h5>Suara Srigala</h5>
+        </div>
+        <div class="bingkai">
+            <div class="kuda">
+            </div>
+            <h5>Suara Kuda</h5>
+        </div>
+    </fieldset>
+</body>
+
+</html>
